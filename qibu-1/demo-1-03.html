@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>渲染列表</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<li v-for="todo in todos">
+					{{todo.text}}
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				todos:[
+					{text:'1111111'},
+					{text:'2222222'},
+					{text:'3333333'}
+				]
+			}
+		})
+	</script>
+</html>
