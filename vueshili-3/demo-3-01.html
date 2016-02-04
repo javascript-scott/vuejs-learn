@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>构造器</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		//每个 Vue.js 应用的起步都是通过构造函数 Vue 创建一个 Vue 的根实例
+		<script>
+			var vm = new Vue({
+				//选项
+			})
+		</script>
+		
+		//可以扩展 Vue 构造器，从而用预定义选项创建可复用的组件构造器：
+		<script>
+			var MyComponent = Vue.extend({
+				//扩展选项
+			})
+			// 所有的 `MyComponent` 实例都将以预定义的扩展选项被创建
+			var MyComponentInstance = new MyComponent()
+		</script>
+	</body>
+</html>
